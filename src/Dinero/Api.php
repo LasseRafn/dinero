@@ -1,4 +1,4 @@
-<?php namespace Apricot\Dinero;
+<?php namespace LasseRafn\Dinero;
 
 class Api {
 
