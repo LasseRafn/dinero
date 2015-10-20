@@ -8,11 +8,11 @@ return [
 	|
 	| Input your client id here. You should get this after
 	| applying as a developer, together with your client
-	| secret.
+	| secret. This would *probably* be your company name.
 	|
 	*/
 
-	'clientId'        => env('DINERO_CLIENT_ID', ''),
+	'client_id'        => env('DINERO_CLIENT_ID', ''),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -25,11 +25,11 @@ return [
 	|
 	*/
 
-	'clientId'        => env('DINERO_CLIENT_SECRET', ''),
+	'client_secret'        => env('DINERO_CLIENT_SECRET', ''),
 
 	/*
 	|--------------------------------------------------------------------------
-	| Client
+	| Api Key
 	|--------------------------------------------------------------------------
 	|
 	| Here goes the Api key from Dinero. This variable
@@ -40,7 +40,22 @@ return [
 	|
 	*/
 
-	'apiKey'        => env('DINERO_API_KEY', 'abcdefghijklmnopqrstuvwxyz123456'),
+	'api_key'        => env('DINERO_API_KEY', 'abcdefghijklmnopqrstuvwxyz123456'),
+
+	/*
+	|--------------------------------------------------------------------------
+	| Store ID (Also known as Organization Id)
+	|--------------------------------------------------------------------------
+	|
+	| This is required in order to manage your organization
+	| in Dinero. Most (if not all) calls require this.
+	|
+	| Can be found in the bottom of the page in your
+	| dashboard on Dinero.
+	|
+	*/
+
+	'store_id'       => env('DINERO_STORE_ID', null),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -60,23 +75,7 @@ return [
 	|
 	*/
 
-	'backupApiKeys' => [ ],
-
-	/*
-	|--------------------------------------------------------------------------
-	| Store ID
-	|--------------------------------------------------------------------------
-	|
-	| This is an optional variable, but it allows you to
-	| use the Dinero::getStoreId() method.
-	|
-	| You can always use the Dinero::setStoreId(...) method
-	| to set it. However the store/company id is not ever
-	| used in api calls.
-	|
-	*/
-
-	'storeId'       => env('DINERO_STORE_ID', null),
+	'backup_api_keys' => [ ],
 
 	/*
 	|--------------------------------------------------------------------------
@@ -90,6 +89,6 @@ return [
 	|
 	*/
 
-	'defaultPageSize' => 100
+	'default_page_size' => 100
 
 ];
