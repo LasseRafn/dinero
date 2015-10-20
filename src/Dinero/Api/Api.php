@@ -1,4 +1,4 @@
-<?php namespace Dinero;
+<?php namespace Dinero\Api;
 
 use GuzzleHttp;
 
@@ -11,7 +11,7 @@ class Api {
 		$this->guzzle = new GuzzleHttp\Client();
 	}
 
-	public function doShit()
+	public static function getInvoice($id)
 	{
 
 	}

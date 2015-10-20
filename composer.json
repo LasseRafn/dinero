@@ -1,7 +1,10 @@
 {
 	"name": "lasserafn/dinero",
 	"description": "Integrate the Dinero API v1 with your application.",
-	"keywords": ["dinero", "laravel"],
+	"keywords": [
+		"dinero",
+		"laravel"
+	],
 	"license": "MIT",
 	"type": "library",
 	"homepage": "http://lasserafn.dk/",
@@ -16,10 +19,9 @@
 		"php": ">=5.3.0",
 		"guzzlehttp/guzzle": "~6.0"
 	},
-	
 	"autoload": {
-		"psr-0": {
-			"Apricot": "src"
+		"psr-4": {
+			"Dinero\\": "src/Dinero/"
 		}
 	}
 }
