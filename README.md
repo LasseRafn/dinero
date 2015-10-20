@@ -10,14 +10,13 @@ composer require lasserafn/dinero
 ````
 $providers = [
 	...
-	Dinero\\Api\\Providers\\DineroServiceProvider::class
+	Dinero\Api\Providers\DineroServiceProvider::class
 ];
 ````
 3) Now, in the same file, under your `````$aliases````` variable.
 `````
 $aliases = [
-	...
-	'Dinero'	=> \\Dinero\\Api\\Support\\Facades\\Dinero::class
+	'Dinero'	=> Dinero\Api\Support\Facades\Dinero::class
 ];
 `````
 4) Generate a config file for the api. Head into your terminal/console and type:
