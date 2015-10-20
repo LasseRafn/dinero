@@ -1,5 +1,6 @@
 <?php namespace Dinero\Api\Support\Facades;
 
+use Illuminate\Support\Facades\Facade;
 
 class Dinero extends Facade
 {
@@ -9,11 +10,6 @@ class Dinero extends Facade
 	 *
 	 * @return string
 	 */
-	protected static function getFacadeAccessor() { return 'dinero'; }
-
-	public static function getInvoice($id)
-	{
-		return $id;
-	}
+	protected static function getFacadeAccessor() { return 'Dinero\Api\Api'; }
 
 }

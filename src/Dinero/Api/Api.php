@@ -11,9 +11,9 @@ class Api {
 		$this->guzzle = new GuzzleHttp\Client();
 	}
 
-	public static function getInvoice($id)
+	function getInvoice($id)
 	{
-
+		return 'Invoice: ' . $id;
 	}
 
 }
